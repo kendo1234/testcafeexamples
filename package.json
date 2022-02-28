@@ -1,0 +1,14 @@
+{
+  "name": "testcafeexamples",
+  "version": "1.0.0",
+  "description": "Beginner to advanced examples of testcafe testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.18.4"
+  }
+}
