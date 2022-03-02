@@ -1,0 +1,6 @@
+{
+    "concurrency": 2,
+    "browsers": ["chrome:headless"],
+    "src": ["/Users/kendo/Documents/dev_tools/testcafeexamples/tests"]
+    
+}
