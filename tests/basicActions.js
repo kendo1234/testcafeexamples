@@ -7,6 +7,4 @@ test('Do a search', async t => {
     await t
         .typeText('#gh-ac', 'Batarangs')
         .click('#gh-btn')
-        .expect(Selector('#s0-1').innerText).eql('batarangs: Search Result | eBay');
-
 });
