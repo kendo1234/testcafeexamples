@@ -13,7 +13,7 @@ const logger = RequestLogger(
   }
 );
 
-fixture.only`Export`.page(url).requestHooks(logger);
+fixture`Export`.page(url).requestHooks(logger);
 
 test("export to csv", async (t) => {
   const exportToCSVButton = Selector("span").withText("Export to CSV");
