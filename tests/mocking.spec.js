@@ -16,7 +16,7 @@ const mock = RequestMock()
     "content-type": "image/gif",
   });
 
-fixture.only`Mocking`
+fixture`Mocking`
   .page("https://devexpress.github.io/testcafe/")
   .requestHooks(mock);
 
