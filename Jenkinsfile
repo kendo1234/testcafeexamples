@@ -2,7 +2,6 @@ node {
     TESTCAFE_DOCKER_PATH = 'Dockerfile'
 }
 
-
 pipeline {
   agent { 
                  dockerfile {
@@ -13,7 +12,8 @@ pipeline {
                 } 
   }
  environment {
-  HOME = '.'
+  HOME = '.',
+  RELEASE='1.0'
  }
  stages {
   stage('Clone scm') {
@@ -37,7 +37,8 @@ pipeline {
 
   stage('Run TestCafe') {
    steps {
-    sh "npm run e2e:headless" 
+     echo "Testing release ${RELEASE}"
+    sh "npm test" 
    }
   }
  }
